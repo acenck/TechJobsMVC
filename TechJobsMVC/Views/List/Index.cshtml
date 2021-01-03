@@ -7,15 +7,28 @@
     <tr>
         @foreach(var column in ViewBag.columns)
         {
-            <th>@column.Value</th>
+            
+                <th>@column.Value</th>
         }
+            
     </tr>
-    <tr>
         @{
-            //TODO #2: Complete the View Jobs By Category Table
+            //TODO #2: Complete the View Jobs By Category Table. Complete.
         }
+    <tr>
 
-        <td></td> @* Feel free to remove or modify this element if necessary. *@
+      
+    <tr>
+        <td>
+            <ul>
+                <li>
+                    <a asp-controller="List" asp-action="Jobs" asp-route-column="All">All</a>
+                </li>
+            </ul>
+        </td>
+
+        
+
         @foreach (var category in ViewBag.tableChoices)
         {
             <td>
@@ -31,3 +44,6 @@
         }
     </tr>
         </table>
+        
+
+
